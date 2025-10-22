@@ -72,40 +72,40 @@
     // Mapa de temas → lista de vídeos
     const TEMAS = {
       TERROR: [
-        { titulo: "EU SOU TEU PAI", 
-         autor: "VALESCA MAYSSA", 
-         url: "https://www.youtube.com/watch?v=kNJPalON82E" 
+        { titulo: "boneco assacino", 
+         autor: "Don Mancini", 
+         url: "https://youtu.be/1N71bhBfDUE?si=EIADhH49jjWUo21f" 
         },
-        { titulo: "DEUS DE PROMESSAS", 
-         autor: "MINISTÉRIO APASCENTAR", 
-         url: "https://youtu.be/93XkdakMp00?si=-S0mta76Kc_GxWhd" 
+        { titulo: "annsbelle", 
+         autor: "annabel monsghan", 
+         url: "https://youtu.be/kHl6aU30pIo?si=k_iNmsxYZQL_Njyl" 
         },
-        { titulo: "NINGUÉM EXPLICA DEUS", 
-         autor: "PRETO NO BRANCO", 
-         url: "https://youtu.be/LYsaKn8FRhc?si=R7yN3htfuafehfSw" 
+        { titulo: "panico", 
+         autor: "kevin wiliamson", 
+         url: "https://youtu.be/Xlut875doho?si=eRn8r2EFU_UoW4xl" 
         },
       ],
       SUSPENCE: [
-        { titulo: "O TEMPO É CURTO; FAÇA O MELHOR USO DO SEU TEMPO", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/fmsAqGy2pCM?si=u8aCy5Lwjoj80xAB" 
+        { titulo: "O silencio dos Inocentes", 
+         autor: "Thomas Harris", 
+         url: "https://youtu.be/8Qsq6DrYDxE?si=rF0wTGy2ya4mLahw" 
         },
-        { titulo: "QUEM É JESUS CRISTO?", 
-         autor: "BILLY GRAHAM EM PORTUGUÊS", 
-         url: "https://youtu.be/6ATJ6avomUg?si=4_qlxZGejDlxVyz5" 
+        { titulo: "seven os crimes capitas", 
+         autor: "Andrew kevin walker", 
+         url: "https://youtu.be/dGzGUQ2CDzQ?si=0lnCEU-EJ6kdEnjn" 
         },
       ],
       FAMILIA: [
-        { titulo: "SOY UNA TAZA", 
-         autor: "CANTA JUEGO", 
-         url: "https://youtu.be/cgEnBkmcpuQ?si=paA3pkAIp3lgAmjQ" 
+        { titulo: "esqueseram de min", 
+         autor: "johh hughes", 
+         url: "https://youtu.be/_gWdCTJ12U0?si=2-9rCrufVEmwCGGT" 
         },
         { titulo: "PEDRO, THIAGO, JOÃO NO BARQUINHO", 
          autor: "3 PALAVRINHAS", 
          url: "https://youtu.be/Tdwy3BZe61s?si=As38T49IC695wKE0" 
         },
       ],
-      AÇÃO: [
+      AÇÃO: [VIDEOSVIDEOSVIDEOS
         { titulo: "INTRODUÇÃO A JAVASCRIPT", 
          autor: "TIGER CODES", 
          url: "https://youtu.be/WRlfwBof66s?si=0o80ULtCNqjj-lU2" 
@@ -113,10 +113,10 @@
         { titulo: "HTML E CSS BÁSICO EM 5 MINUTOS", 
          autor: "TIGER CODES", 
          url: "https://www.youtube.com/watch?v=5Hn58p-hYC0" 
-        },
+        },VIDEOS
       ],
-    };
-
+    };VIDEOS
+VIDEOS
     // Seletores
     const selectTema = document.getElementById("tema");
     const menuUl     = document.getElementById("menu-temas");
@@ -129,14 +129,64 @@
       try {
         const u = new URL(url);
         const id = u.searchParams.get("v");
-        if (id) return `https://www.youtube.com/embed/${id}`;
+        if (id) return `VIDEOS
+https://www.youtube.com/embed/${id}`;
         if (u.hostname.includes("youtu.be")) return `https://www.youtube.com/embed/${u.pathname.slice(1)}`;
         return url;
-      } catch {
+      } catch {VIDEOS
+
         return url;
       }
     }
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    h2 {
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      color: #555;
+      font-size: 22px;
+      margin-top: 24px;
+    }
+
+    p {
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      color: #cdcdcd;
+      line-height: 1.6;
+      text-align: justify;
+      margin-left: 20px;
+ 			margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+     <!-- Botão Home -->
+    <div class="sobre">
+     <a href="/index.html" class="btn-sobre">Home</a>
+    </div>
+    <h1>ROBERTO-TELEFLIX</h1>
+  </header>
+  <main style="max-width:700px; margin:40px auto; padding:20px;">
+<!-- Digite aqui abaixo nas tags <p> o seu texto sobre sua página e sobre você -->
+<h2>Sobre o Projeto</h2>
+<p>TEXTO SOBRE O PROJETO 1º PARÁGRAFO</p>
+<p>TEXTO SOBRE O PROJETO 2º PARÁGRAFO</p>
+    
+<h2>Sobre o Autor</h2>
+<p>TEXTO SOBRE VOCÊ 1º PARÁGRAFO</p>
+<p>TEXTO SOBRE VOCÊ 2º PARÁGRAFO</p>
+  <p style="margin-top:30px;">
+      <a href="index.html" style="text-decoration:none;">← Voltar para a página inicial</a>
+    </p>
+  </main>
+</body>
+</html>
     // Renderiza o menu com base no tema
     function renderMenu(tema) {
       const lista = TEMAS[tema] || [];
@@ -174,6 +224,7 @@
 </html>
 
 
+VIDEOS
 
 
 
